@@ -53,6 +53,11 @@ terraform plan -var-file="demo.tfvars"
 terraform apply -var-file="demo.tfvars"
 ```
 
+Clean up resources after the operation is complete.
+```
+terraform destroy -var-file="demo.tfvars"
+```
+
 
 ### [Reference](https://support.huaweicloud.com/intl/zh-cn/qs-terraform/index.html)
 
