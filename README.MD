@@ -47,8 +47,8 @@ modules
 Enter the dir of the project and type in the following commands in command-line interface (CLI)
 ```
 terraform init
-terraform plan --varfile="demo.tfvars"
-terraform apply --varfile="demo.tfvars"
+terraform plan -var-file="demo.tfvars"
+terraform apply -var-file="demo.tfvars"
 ```
 
 
