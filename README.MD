@@ -30,7 +30,7 @@ Terraform is distributed as a single binary. Download a Terraform package and de
    * [Config PATH in Windows](https://stackoverflow.com/questions/1618280/where-can-i-set-path-to-make-exe-on-windows?spm=a2c4g.11186623.0.0.51777aa7jeVdin)
 3. Run the following command in the command-line interface (CLI) to check whether the path is correctly configured:
 ```
-**terraform**
+terraform
 ```
 If the following information is displayed, the configuration is correct and Terraform is ready to run.
 >Usage: terraform [-version] [-help] <command> [args]
