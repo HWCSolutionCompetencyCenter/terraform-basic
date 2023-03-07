@@ -1,5 +1,6 @@
 ### Introduction
 This repo will use terraform to create a ELB to distribute incoming traffic accross backend ECSs on HUAWEI CLOUD. The figure belows shows the architecture.
+
 ![The architecture](https://support.huaweicloud.com/intl/en-us/qs-elb/en-us_image_0198607819.png)
 
 
