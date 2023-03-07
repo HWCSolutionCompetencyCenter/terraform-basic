@@ -38,15 +38,16 @@ If the following information is displayed, the configuration is correct and Terr
 >....
 
 ### Configuration
-1. Config the __"main.tf"__ file of the root directory. Each "module" block in the main file will create the resources in the module directory. For example, the "network_service" module will create the VPC defined in the "./module/VPC" 
-2. Config the __"demo.tfvars"__ file. Make sure the **AKSK**(the "access_key" and "secret_key") has been configured. [How to get AKSK](https://support.huaweicloud.com/intl/en-us/usermanual-iam/iam_02_0003.html).
-3. Make your own configuration. Please refer to the [HUAWEI Cloud registry](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs
+1. Download the project to the environment where terraform is installed.
+2. (Optional)Config the __"main.tf"__ file in the root directory, comment out the modules you don't want to create. Each "module" block in the main file will create the resources in the module directory. For example, the "network_service" module will create the VPC defined in the "./module/VPC". 
+3. Config the __"demo.tfvars"__ file. Make sure the **AKSK**(the "access_key" and "secret_key") has been configured. [How to get AKSK](https://support.huaweicloud.com/intl/en-us/usermanual-iam/iam_02_0003.html).
+4. You can adjust the configuration according to your needs. Please refer to the [HUAWEI Cloud registry](https://registry.terraform.io/providers/huaweicloud/huaweicloud/latest/docs
 ) to get more details about how to config the services of HUAWEI Cloud.
 
 
 
-### How to Run
-Enter the dir of the project and type in the following commands in command-line interface (CLI)
+### How to run 
+Enter the root directory of the project and type in the following commands in command-line interface (CLI)
 ```
 terraform init
 terraform plan -var-file="demo.tfvars"
